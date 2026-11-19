@@ -1,0 +1,2184 @@
+import urllib.parse
+
+def svg_to_data_uri(svg_str):
+    encoded = urllib.parse.quote(svg_str.strip())
+    return f"data:image/svg+xml;utf8,{encoded}"
+
+# Rich editorial vector illustrations in terracotta & warm white palette
+hero_1_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A261D"/>
+      <stop offset="55%" stop-color="#6E3522"/>
+      <stop offset="100%" stop-color="#D95D39"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="75%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#F6C87A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D95D39" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="700" fill="url(#bg1)"/>
+  <rect width="1400" height="700" fill="url(#glow1)"/>
+  <!-- Decorative Marble Plate -->
+  <circle cx="1030" cy="360" r="245" fill="#FAF8F5" opacity="0.96"/>
+  <circle cx="1030" cy="360" r="210" fill="none" stroke="#E8E2DA" stroke-width="3"/>
+  <!-- Spaghetti Swirl -->
+  <g fill="none" stroke="#E8B85C" stroke-width="7" stroke-linecap="round">
+    <path d="M900 350 C920 240, 1140 240, 1160 350 C1180 460, 890 460, 910 340"/>
+    <path d="M925 360 C945 265, 1120 265, 1135 360 C1150 440, 920 440, 935 350" stroke="#F3CE7A"/>
+    <path d="M950 355 C970 285, 1095 285, 1110 355 C1120 420, 945 420, 960 355" stroke="#DFA344"/>
+  </g>
+  <!-- Cherry Tomatoes & Basil -->
+  <circle cx="980" cy="320" r="22" fill="#D94528"/>
+  <circle cx="973" cy="313" r="5" fill="#FF8C73"/>
+  <circle cx="1075" cy="395" r="24" fill="#C9381D"/>
+  <circle cx="1068" cy="388" r="5" fill="#FF8C73"/>
+  <path d="M1020 330 Q1055 290 1085 325 Q1050 355 1020 330 Z" fill="#4A6B4E"/>
+  <path d="M945 395 Q915 365 945 340 Q975 365 945 395 Z" fill="#5D8262"/>
+  <!-- Olive Oil Bottle Silhouette -->
+  <rect x="740" y="290" width="76" height="190" rx="18" fill="#8A9A3E" opacity="0.9"/>
+  <rect x="765" y="230" width="26" height="65" rx="6" fill="#8A9A3E" opacity="0.9"/>
+  <rect x="762" y="215" width="32" height="18" rx="4" fill="#C49A6C"/>
+  <rect x="748" y="340" width="60" height="75" rx="6" fill="#FAF8F5" opacity="0.92"/>
+</svg>
+''')
+
+hero_2_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B241E"/>
+      <stop offset="60%" stop-color="#5B4332"/>
+      <stop offset="100%" stop-color="#B87A44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="700" fill="url(#bg2)"/>
+  <!-- Terracotta Cloth -->
+  <polygon points="820,0 1400,0 1400,700 680,700" fill="#D95D39" opacity="0.28"/>
+  <!-- Rigatoni & Tagliatelle Graphic -->
+  <g transform="translate(860, 170)">
+    <rect x="0" y="40" width="75" height="130" rx="22" fill="#F2CB77" transform="rotate(-18 37 105)"/>
+    <ellipse cx="22" cy="48" rx="28" ry="12" fill="#C99B42" transform="rotate(-18 22 48)"/>
+    <rect x="120" y="20" width="75" height="130" rx="22" fill="#F6D78E" transform="rotate(14 157 85)"/>
+    <ellipse cx="168" cy="26" rx="28" ry="12" fill="#C99B42" transform="rotate(14 168 26)"/>
+    <!-- Tagliatelle Nest -->
+    <circle cx="290" cy="240" r="115" fill="none" stroke="#F4CE7A" stroke-width="14"/>
+    <circle cx="290" cy="240" r="92" fill="none" stroke="#E2B256" stroke-width="12"/>
+    <circle cx="290" cy="240" r="68" fill="none" stroke="#F7DC9C" stroke-width="10"/>
+    <!-- Fusilli -->
+    <path d="M40 280 Q80 250 120 280 T200 280" fill="none" stroke="#F3CA72" stroke-width="24" stroke-linecap="round"/>
+    <path d="M30 340 Q70 310 110 340 T190 340" fill="none" stroke="#E0AF52" stroke-width="24" stroke-linecap="round"/>
+  </g>
+</svg>
+''')
+
+hero_3_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#252E24"/>
+      <stop offset="55%" stop-color="#485B3B"/>
+      <stop offset="100%" stop-color="#A69738"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="700" fill="url(#bg3)"/>
+  <!-- Terracotta Bowl with Golden Olive Oil -->
+  <ellipse cx="1010" cy="450" rx="210" ry="75" fill="#B84726"/>
+  <path d="M800 450 Q1010 590 1220 450 Z" fill="#9E391C"/>
+  <ellipse cx="1010" cy="442" rx="185" ry="58" fill="#E3B938"/>
+  <ellipse cx="1010" cy="442" rx="135" ry="36" fill="#F5D76E" opacity="0.65"/>
+  <!-- Golden Oil Stream -->
+  <rect x="1004" y="90" width="12" height="352" rx="6" fill="#F6D665" opacity="0.88"/>
+  <!-- Peperoncino Red Chilies -->
+  <path d="M760 510 Q820 470 875 515 Q815 535 760 510 Z" fill="#D93829"/>
+  <path d="M810 545 Q875 510 925 555 Q865 572 810 545 Z" fill="#C42B1D"/>
+</svg>
+''')
+
+hero_4_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2E1E19"/>
+      <stop offset="50%" stop-color="#8A3B24"/>
+      <stop offset="100%" stop-color="#E06D48"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="700" fill="url(#bg4)"/>
+  <!-- Recipe Cards & Pantry Grid -->
+  <rect x="780" y="130" width="210" height="270" rx="16" fill="#FAF8F5" transform="rotate(-6 885 265)"/>
+  <rect x="805" y="160" width="160" height="110" rx="8" fill="#FDF1ED" transform="rotate(-6 885 265)"/>
+  <circle cx="885" cy="215" r="34" fill="#D95D39" transform="rotate(-6 885 265)"/>
+  <rect x="1020" y="170" width="220" height="290" rx="16" fill="#FFFFFF" transform="rotate(5 1130 315)"/>
+  <circle cx="1130" cy="285" r="55" fill="#4A6B4E" transform="rotate(5 1130 315)"/>
+  <circle cx="1130" cy="285" r="35" fill="#F2C86B" transform="rotate(5 1130 315)"/>
+</svg>
+''')
+
+prod_pasta_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#FAF6F0"/>
+  <circle cx="300" cy="310" r="190" fill="#F2E8DA"/>
+  <!-- Spaghetti Bundle -->
+  <g transform="rotate(-24 250 300)">
+    <rect x="175" y="120" width="95" height="360" rx="12" fill="#EBC26B"/>
+    <line x1="190" y1="120" x2="190" y2="480" stroke="#D5A648" stroke-width="3"/>
+    <line x1="208" y1="120" x2="208" y2="480" stroke="#F6D78A" stroke-width="3"/>
+    <line x1="226" y1="120" x2="226" y2="480" stroke="#D5A648" stroke-width="3"/>
+    <line x1="244" y1="120" x2="244" y2="480" stroke="#F6D78A" stroke-width="3"/>
+    <rect x="170" y="275" width="105" height="44" rx="4" fill="#D95D39"/>
+  </g>
+  <!-- Tagliatelle Nest -->
+  <g transform="translate(385, 340)">
+    <ellipse cx="0" cy="0" rx="85" ry="68" fill="#F3CE78" stroke="#D4A346" stroke-width="8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="46" fill="none" stroke="#E0B154" stroke-width="8"/>
+    <ellipse cx="0" cy="0" rx="35" ry="26" fill="none" stroke="#F8DF9E" stroke-width="7"/>
+  </g>
+</svg>
+''')
+
+prod_oil_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#F8F6F1"/>
+  <circle cx="300" cy="320" r="190" fill="#ECE9DF"/>
+  <!-- Olive Oil Bottle -->
+  <rect x="242" y="215" width="116" height="265" rx="22" fill="#5D6E32"/>
+  <rect x="248" y="225" width="24" height="245" rx="10" fill="#7B8E46" opacity="0.5"/>
+  <rect x="280" y="130" width="40" height="92" rx="8" fill="#5D6E32"/>
+  <rect x="275" y="108" width="50" height="26" rx="5" fill="#C49A6C"/>
+  <!-- Label -->
+  <rect x="254" y="285" width="92" height="115" rx="6" fill="#FAF8F5"/>
+  <text x="300" y="332" font-family="serif" font-size="16" font-weight="bold" fill="#1E1B18" text-anchor="middle">TERRA</text>
+  <text x="300" y="354" font-family="sans-serif" font-size="11" fill="#D95D39" text-anchor="middle">EXTRA VIRGIN</text>
+  <line x1="274" y1="368" x2="326" y2="368" stroke="#E0D8CE" stroke-width="2"/>
+  <!-- Red Peperoncino -->
+  <path d="M145 455 Q195 415 235 465 Q185 482 145 455 Z" fill="#D93829"/>
+  <path d="M165 480 Q215 450 245 490 Q198 502 165 480 Z" fill="#B8291C"/>
+  <!-- Peppercorns -->
+  <circle cx="390" cy="475" r="8" fill="#2B2623"/>
+  <circle cx="412" cy="482" r="7" fill="#3D3632"/>
+  <circle cx="430" cy="470" r="8" fill="#2B2623"/>
+</svg>
+''')
+
+prod_sauce_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#FAF5F2"/>
+  <circle cx="300" cy="320" r="190" fill="#F5E6E0"/>
+  <!-- Glass Jar of San Marzano Sauce -->
+  <rect x="205" y="205" width="190" height="265" rx="34" fill="#C93B22"/>
+  <rect x="218" y="220" width="28" height="235" rx="12" fill="#E35B42" opacity="0.45"/>
+  <!-- Metal Lid -->
+  <rect x="215" y="172" width="170" height="36" rx="8" fill="#262220"/>
+  <!-- Artisan Label -->
+  <rect x="205" y="280" width="190" height="105" fill="#FAF8F5"/>
+  <text x="300" y="325" font-family="serif" font-size="18" font-weight="bold" fill="#1E1B18" text-anchor="middle">SAN MARZANO</text>
+  <text x="300" y="349" font-family="sans-serif" font-size="12" fill="#D95D39" text-anchor="middle">ARTISAN PASTA SAUCE</text>
+  <!-- Fresh Basil Leaves -->
+  <path d="M365 460 Q415 405 455 445 Q415 485 365 460 Z" fill="#4A6E4E"/>
+  <path d="M350 470 Q385 430 420 465 Q385 495 350 470 Z" fill="#618A65"/>
+</svg>
+''')
+
+prod_spice_svg = svg_to_data_uri('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#F9F6F2"/>
+  <circle cx="300" cy="320" r="190" fill="#EFE9E1"/>
+  <!-- Left Terracotta Pot (Sea Salt) -->
+  <path d="M120 350 Q120 455 180 455 Q240 455 240 350 Z" fill="#D95D39"/>
+  <ellipse cx="180" cy="350" rx="60" ry="16" fill="#B84726"/>
+  <path d="M135 348 Q180 315 225 348 Z" fill="#FFFFFF"/>
+  <!-- Center Glass Spice Jar (Black Pepper) -->
+  <rect x="255" y="255" width="90" height="200" rx="18" fill="#E3DDD5" stroke="#CFC6BA" stroke-width="3"/>
+  <rect x="263" y="305" width="74" height="142" rx="12" fill="#2E2925"/>
+  <rect x="272" y="225" width="56" height="32" rx="6" fill="#C49A6C"/>
+  <!-- Right Terracotta Pot (Oregano) -->
+  <path d="M360 350 Q360 455 420 455 Q480 455 480 350 Z" fill="#D95D39"/>
+  <ellipse cx="420" cy="350" rx="60" ry="16" fill="#B84726"/>
+  <path d="M375 348 Q420 318 465 348 Z" fill="#6B7D4B"/>
+</svg>
+''')
+
+html_single_file = f'''<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TERRA PASTA | 아티장 파스타 인그리디언트 부티크</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {{
+      --bg-white: #FFFFFF;
+      --bg-warm: #FAF8F5;
+      --bg-stone: #F3EFEA;
+      --terracotta: #D95D39;
+      --terracotta-dark: #B84726;
+      --terracotta-soft: #FDF1ED;
+      --accent-olive: #4A5D4E;
+      --accent-gold: #C89B3C;
+      --text-primary: #1E1B18;
+      --text-secondary: #5C554E;
+      --text-muted: #8E857D;
+      --border-light: #E8E2DA;
+      --shadow-sm: 0 4px 16px rgba(30, 27, 24, 0.05);
+      --shadow-md: 0 12px 32px rgba(30, 27, 24, 0.09);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }}
+
+    * {{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }}
+
+    html {{
+      scroll-behavior: smooth;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background-color: var(--bg-white);
+    }}
+
+    body {{
+      line-height: 1.6;
+      overflow-x: hidden;
+    }}
+
+    a {{
+      text-decoration: none;
+      color: inherit;
+    }}
+
+    button {{
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }}
+
+    img {{
+      display: block;
+      max-width: 100%;
+    }}
+
+    /* Top Announcement Bar */
+    .top-bar {{
+      background: var(--text-primary);
+      color: #FFF;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 8px 16px;
+      letter-spacing: 0.02em;
+    }}
+    .top-bar span {{
+      color: #F4977A;
+      font-weight: 700;
+    }}
+
+    /* Sticky Header */
+    header {{
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+    }}
+
+    .nav-container {{
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }}
+
+    .logo {{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }}
+    .logo-dot {{
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--terracotta);
+      display: inline-block;
+    }}
+
+    .nav-links {{
+      display: flex;
+      gap: 32px;
+      font-size: 0.94rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }}
+    .nav-links a:hover {{
+      color: var(--terracotta);
+    }}
+
+    .nav-actions {{
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }}
+
+    .user-badge-pill {{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--bg-warm);
+      border: 1px solid var(--border-light);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }}
+    .user-badge-pill:hover {{
+      border-color: var(--terracotta);
+    }}
+    .tier-chip {{
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--terracotta);
+    }}
+    .tier-chip.bronze {{ background: #A46B49; }}
+    .tier-chip.silver {{ background: #7E8790; }}
+    .tier-chip.gold {{ background: #C89B3C; }}
+    .tier-chip.vip {{ background: #1E1B18; }}
+
+    .btn-icon {{
+      position: relative;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }}
+    .btn-icon:hover {{
+      background: var(--terracotta-dark);
+      transform: translateY(-1px);
+    }}
+    .cart-count {{
+      background: #fff;
+      color: var(--terracotta);
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 999px;
+    }}
+
+    /* Hero Slider */
+    .hero-section {{
+      position: relative;
+      width: 100%;
+      height: 560px;
+      overflow: hidden;
+      background: var(--bg-stone);
+    }}
+
+    .hero-slide {{
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.9s ease-in-out, visibility 0.9s;
+    }}
+    .hero-slide.active {{
+      opacity: 1;
+      visibility: visible;
+    }}
+    .hero-slide img {{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 6s ease;
+    }}
+    .hero-slide.active img {{
+      transform: scale(1);
+    }}
+    .hero-overlay {{
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(24, 20, 17, 0.68) 0%, rgba(24, 20, 17, 0.25) 55%, rgba(24, 20, 17, 0.05) 100%);
+      display: flex;
+      align-items: center;
+    }}
+    .hero-inner {{
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      color: #FFF;
+    }}
+    .hero-eyebrow {{
+      display: inline-block;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }}
+    .hero-title {{
+      font-family: 'Cormorant Garamond', 'Pretendard', serif;
+      font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.18;
+      max-width: 620px;
+      margin-bottom: 16px;
+    }}
+    .hero-desc {{
+      font-size: 1.02rem;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 500px;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }}
+    .hero-cta-group {{
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }}
+    .btn-primary {{
+      background: var(--terracotta);
+      color: #fff;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }}
+    .btn-primary:hover {{
+      background: var(--terracotta-dark);
+      transform: translateY(-2px);
+    }}
+    .btn-outline-white {{
+      border: 1px solid rgba(255,255,255,0.75);
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }}
+    .btn-outline-white:hover {{
+      background: #fff;
+      color: var(--text-primary);
+    }}
+
+    .hero-controls {{
+      position: absolute;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 10;
+    }}
+    .hero-dot {{
+      width: 28px;
+      height: 4px;
+      border-radius: 99px;
+      background: rgba(255,255,255,0.4);
+      transition: var(--transition);
+    }}
+    .hero-dot.active {{
+      width: 48px;
+      background: var(--terracotta);
+    }}
+    .hero-arrow {{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.22);
+      backdrop-filter: blur(6px);
+      color: #fff;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: var(--transition);
+    }}
+    .hero-arrow:hover {{
+      background: var(--terracotta);
+    }}
+    .hero-prev {{ left: 20px; }}
+    .hero-next {{ right: 20px; }}
+
+    /* Common Section Layout */
+    section {{
+      padding: 80px 24px;
+    }}
+    .container {{
+      max-width: 1280px;
+      margin: 0 auto;
+    }}
+    .section-header {{
+      text-align: center;
+      margin-bottom: 48px;
+    }}
+    .section-tag {{
+      color: var(--terracotta);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 8px;
+    }}
+    .section-title {{
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }}
+    .section-sub {{
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }}
+
+    /* Pasta Type Smart Curation Section */
+    .curation-section {{
+      background: var(--bg-warm);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }}
+
+    .pasta-tabs {{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+    }}
+    .pasta-tab {{
+      padding: 11px 22px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border-light);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }}
+    .pasta-tab:hover {{
+      border-color: var(--terracotta);
+      color: var(--terracotta);
+    }}
+    .pasta-tab.active {{
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(217, 93, 57, 0.25);
+    }}
+
+    .recipe-bundle-box {{
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 1.1fr 1.9fr;
+      gap: 32px;
+      align-items: center;
+    }}
+
+    .bundle-info h3 {{
+      font-size: 1.55rem;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }}
+    .bundle-info p {{
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+      margin-bottom: 18px;
+    }}
+    .chef-tip {{
+      background: var(--terracotta-soft);
+      border-left: 3px solid var(--terracotta);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.86rem;
+      color: var(--text-primary);
+      margin-bottom: 22px;
+    }}
+    .bundle-summary {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-light);
+    }}
+    .bundle-price {{
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--terracotta);
+    }}
+
+    .bundle-items-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
+    }}
+    .mini-prod-card {{
+      background: var(--bg-warm);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      text-align: center;
+      transition: var(--transition);
+    }}
+    .mini-prod-card:hover {{
+      transform: translateY(-3px);
+      border-color: var(--terracotta);
+    }}
+    .mini-prod-card img {{
+      width: 100%;
+      height: 125px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin-bottom: 10px;
+    }}
+    .mini-role {{
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }}
+    .mini-name {{
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin: 4px 0;
+    }}
+    .mini-price {{
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }}
+
+    /* Full Store Catalog */
+    .filter-bar {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border-light);
+    }}
+    .cat-buttons {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }}
+    .cat-btn {{
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: var(--bg-warm);
+      transition: var(--transition);
+    }}
+    .cat-btn.active, .cat-btn:hover {{
+      background: var(--text-primary);
+      color: #fff;
+    }}
+
+    .search-input {{
+      padding: 9px 16px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      width: 240px;
+      outline: none;
+    }}
+    .search-input:focus {{
+      border-color: var(--terracotta);
+    }}
+
+    .product-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 26px;
+    }}
+
+    .product-card {{
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }}
+    .product-card:hover {{
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(217, 93, 57, 0.4);
+    }}
+    .prod-img-wrap {{
+      position: relative;
+      height: 240px;
+      background: var(--bg-warm);
+      overflow: hidden;
+    }}
+    .prod-img-wrap img {{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }}
+    .product-card:hover .prod-img-wrap img {{
+      transform: scale(1.05);
+    }}
+    .prod-badge {{
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--text-primary);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }}
+    .prod-badge.hot {{
+      background: var(--terracotta);
+    }}
+    .prod-body {{
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }}
+    .prod-cat {{
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }}
+    .prod-title {{
+      font-size: 1.06rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }}
+    .prod-desc {{
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      flex: 1;
+    }}
+    .prod-tags {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 16px;
+    }}
+    .prod-tag {{
+      font-size: 0.72rem;
+      background: var(--bg-warm);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }}
+    .prod-footer {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-light);
+    }}
+    .prod-price {{
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }}
+    .btn-add-cart {{
+      background: var(--terracotta-soft);
+      color: var(--terracotta);
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }}
+    .btn-add-cart:hover {{
+      background: var(--terracotta);
+      color: #fff;
+    }}
+
+    /* Membership & Point Tier Section */
+    .membership-section {{
+      background: var(--bg-warm);
+      border-top: 1px solid var(--border-light);
+    }}
+
+    .tier-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+      margin-bottom: 36px;
+    }}
+    .tier-card {{
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      position: relative;
+      transition: var(--transition);
+    }}
+    .tier-card.current-tier {{
+      border: 2px solid var(--terracotta);
+      box-shadow: var(--shadow-md);
+    }}
+    .tier-card-badge {{
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }}
+    .tier-rate {{
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--terracotta);
+      margin-bottom: 4px;
+    }}
+    .tier-cond {{
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }}
+    .tier-perks {{
+      list-style: none;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }}
+    .tier-perks li {{
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+    }}
+    .tier-perks li::before {{
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--terracotta);
+      font-weight: 700;
+    }}
+
+    .member-dashboard-bar {{
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }}
+
+    /* Footer */
+    footer {{
+      background: var(--text-primary);
+      color: rgba(255,255,255,0.75);
+      padding: 56px 24px 32px;
+      font-size: 0.86rem;
+    }}
+    .footer-grid {{
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }}
+    .footer-logo {{
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }}
+    .footer-title {{
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }}
+    .footer-list {{
+      list-style: none;
+    }}
+    .footer-list li {{
+      margin-bottom: 8px;
+    }}
+    .footer-bottom {{
+      max-width: 1280px;
+      margin: 24px auto 0;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+    }}
+
+    /* Slide-over Cart & Checkout Drawer */
+    .drawer-backdrop {{
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 18, 16, 0.52);
+      z-index: 200;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }}
+    .drawer-backdrop.open {{
+      opacity: 1;
+      visibility: visible;
+    }}
+    .cart-drawer {{
+      position: fixed;
+      top: 0;
+      right: -460px;
+      width: 100%;
+      max-width: 440px;
+      height: 100vh;
+      background: #fff;
+      z-index: 210;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+      transition: right 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }}
+    .cart-drawer.open {{
+      right: 0;
+    }}
+    .drawer-header {{
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }}
+    .drawer-body {{
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px;
+    }}
+    .cart-item {{
+      display: flex;
+      gap: 14px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-light);
+      align-items: center;
+    }}
+    .cart-item img {{
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+    }}
+    .cart-item-info {{
+      flex: 1;
+    }}
+    .qty-control {{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 6px;
+    }}
+    .qty-btn {{
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      border: 1px solid var(--border-light);
+      font-weight: 700;
+    }}
+    .drawer-footer {{
+      padding: 20px 24px;
+      background: var(--bg-warm);
+      border-top: 1px solid var(--border-light);
+    }}
+    .point-use-box {{
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+    }}
+    .point-input-row {{
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }}
+    .point-input-row input {{
+      flex: 1;
+      padding: 7px 10px;
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+    }}
+    .summary-row {{
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }}
+    .summary-total {{
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-light);
+      color: var(--terracotta);
+    }}
+
+    /* Modals */
+    .modal-overlay {{
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 18, 16, 0.58);
+      z-index: 300;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }}
+    .modal-overlay.open {{
+      display: flex;
+    }}
+    .modal-box {{
+      background: #fff;
+      border-radius: var(--radius-md);
+      max-width: 460px;
+      width: 100%;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      max-height: 90vh;
+      overflow-y: auto;
+    }}
+    .modal-header {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }}
+    .form-group {{
+      margin-bottom: 14px;
+    }}
+    .form-group label {{
+      display: block;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }}
+    .form-group input, .form-group select {{
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+    }}
+    .pay-methods {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 6px;
+    }}
+    .pay-method-btn {{
+      border: 1px solid var(--border-light);
+      padding: 10px 6px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-align: center;
+      transition: var(--transition);
+    }}
+    .pay-method-btn.active {{
+      border-color: var(--terracotta);
+      background: var(--terracotta-soft);
+      color: var(--terracotta);
+    }}
+
+    /* Toast Notification */
+    .toast {{
+      position: fixed;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--text-primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      z-index: 400;
+      opacity: 0;
+      transition: all 0.35s ease;
+      box-shadow: var(--shadow-md);
+    }}
+    .toast.show {{
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }}
+
+    @media (max-width: 900px) {{
+      .recipe-bundle-box {{
+        grid-template-columns: 1fr;
+      }}
+      .footer-grid {{
+        grid-template-columns: 1fr 1fr;
+      }}
+      .nav-links {{
+        display: none;
+      }}
+    }}
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-bar">
+    신규 회원가입 시 즉시 사용 가능한 <span>웰컴 3,000P</span> 지급 & 첫 구매 시 <span>SILVER 등급</span> 자동 승급!
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">TERRA PASTA<span class="logo-dot"></span></a>
+      <nav class="nav-links">
+        <a href="#curation">파스타별 추천 큐레이션</a>
+        <a href="#catalog">전체 식재료 스토어</a>
+        <a href="#membership">멤버십 & 포인트 혜택</a>
+      </nav>
+      <div class="nav-actions">
+        <div id="userStatusArea" class="user-badge-pill" onclick="openAuthModal()">
+          <span id="headerUserName">로그인 / 회원가입</span>
+          <span id="headerUserTier" class="tier-chip bronze">GUEST</span>
+          <span id="headerUserPoints" style="color: var(--terracotta);">0P</span>
+        </div>
+        <button class="btn-icon" onclick="toggleCart(true)">
+          장바구니 <span id="cartBadgeCount" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Slider (4 Slides - Embedded Data URIs) -->
+  <section class="hero-section" style="padding: 0;">
+    <div class="hero-slide active">
+      <img src="{hero_1_svg}" alt="이탈리아 아티장 파스타 재료 컬렉션">
+      <div class="hero-overlay">
+        <div class="hero-inner">
+          <span class="hero-eyebrow">ARTISAN ITALIAN PANTRY</span>
+          <h1 class="hero-title">완벽한 한 접시를 완성하는<br>이탈리아 정통 파스타 재료</h1>
+          <p class="hero-desc">브론즈 다이스 건면부터 냉압착 엑스트라 버진 올리브 오일, 칼라브리아 페퍼론치노까지 셰프의 팬트리를 그대로 옮겼습니다.</p>
+          <div class="hero-cta-group">
+            <a href="#curation" class="btn-primary">파스타별 재료 추천받기</a>
+            <a href="#catalog" class="btn-outline-white">전체 상품 둘러보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="{hero_2_svg}" alt="브론즈 다이스 아티장 파스타 면">
+      <div class="hero-overlay">
+        <div class="hero-inner">
+          <span class="hero-eyebrow">BRONZE-DIE EXTRUDED</span>
+          <h1 class="hero-title">소스를 깊게 머금는<br>거친 표면의 브론즈 파스타 면</h1>
+          <p class="hero-desc">이탈리아 그라냐노 지방의 전통 제면 방식으로 천천히 건조해 쫄깃한 알덴테 식감과 밀 본연의 고소함을 살렸습니다.</p>
+          <div class="hero-cta-group">
+            <a href="#catalog" class="btn-primary">아티장 파스타 면 보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="{hero_3_svg}" alt="엑스트라 버진 올리브 오일 & 페퍼론치노">
+      <div class="hero-overlay">
+        <div class="hero-inner">
+          <span class="hero-eyebrow">COLD-PRESSED & SPICES</span>
+          <h1 class="hero-title">알리오 올리오의 풍미를 깨우는<br>첫 수확 올리브 오일 & 향신료</h1>
+          <p class="hero-desc">산도 0.2% 이하의 프리미엄 올리브 오일과 알싸한 매운맛의 건 페퍼론치노로 레스토랑 수준의 오일 파스타를 완성하세요.</p>
+          <div class="hero-cta-group">
+            <a href="#curation" class="btn-primary">오일 파스타 세트 확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="{hero_4_svg}" alt="파스타 메뉴별 원스톱 레시피 키트">
+      <div class="hero-overlay">
+        <div class="hero-inner">
+          <span class="hero-eyebrow">CHEF'S CURATED PAIRING</span>
+          <h1 class="hero-title">오늘 만들고 싶은 파스타만<br>선택하면 재료가 한 번에</h1>
+          <p class="hero-desc">알리오 올리오, 아마트리치아나, 바질 페스토, 봉골레까지 각 파스타에 최적화된 면과 소스를 한 번에 장바구니에 담아보세요.</p>
+          <div class="hero-cta-group">
+            <a href="#membership" class="btn-primary">등급별 최대 10% 포인트 적립</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="hero-arrow hero-prev" onclick="moveSlide(-1)" aria-label="이전 슬라이드">&#10094;</button>
+    <button class="hero-arrow hero-next" onclick="moveSlide(1)" aria-label="다음 슬라이드">&#10095;</button>
+
+    <div class="hero-controls">
+      <button class="hero-dot active" onclick="goToSlide(0)"></button>
+      <button class="hero-dot" onclick="goToSlide(1)"></button>
+      <button class="hero-dot" onclick="goToSlide(2)"></button>
+      <button class="hero-dot" onclick="goToSlide(3)"></button>
+    </div>
+  </section>
+
+  <!-- Pasta Type Smart Curation -->
+  <section id="curation" class="curation-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PASTA PAIRING CURATION</span>
+        <h2 class="section-title">어떤 파스타를 요리하실 건가요?</h2>
+        <p class="section-sub">원하는 파스타 메뉴를 선택하면 가장 잘 어울리는 면, 오일, 소스, 조미료 조합을 추천해 드립니다.</p>
+      </div>
+
+      <div class="pasta-tabs" id="pastaTabs"></div>
+
+      <div class="recipe-bundle-box" id="bundleDisplay"></div>
+    </div>
+  </section>
+
+  <!-- Store Product Catalog -->
+  <section id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TERRA STORE CATALOG</span>
+        <h2 class="section-title">엄선된 파스타 식재료 컬렉션</h2>
+        <p class="section-sub">면, 소스, 올리브 오일, 페퍼론치노 및 천연 조미료까지 필요한 재료만 골라 담으세요.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="cat-buttons" id="categoryButtons">
+          <button class="cat-btn active" data-cat="all">전체 보기</button>
+          <button class="cat-btn" data-cat="면">파스타 면</button>
+          <button class="cat-btn" data-cat="오일">올리브 오일</button>
+          <button class="cat-btn" data-cat="소스">파스타 소스</button>
+          <button class="cat-btn" data-cat="조미료">페퍼론치노 · 조미료</button>
+        </div>
+        <input type="text" id="searchInput" class="search-input" placeholder="재료명 또는 파스타 검색..." oninput="renderProducts()" />
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- Membership & Point System -->
+  <section id="membership" class="membership-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MEMBERSHIP & REWARDS</span>
+        <h2 class="section-title">테라 멤버십 등급별 포인트 제도</h2>
+        <p class="section-sub">누적 구매 금액에 따라 등급이 자동 승급되며, 결제 시 최대 10% 포인트 적립과 현금처럼 사용 가능한 혜택을 드립니다.</p>
+      </div>
+
+      <div class="tier-grid" id="tierGrid">
+        <div class="tier-card" data-tier="BRONZE">
+          <span class="tier-card-badge" style="background:#A46B49;">BRONZE</span>
+          <div class="tier-rate">2% 적립</div>
+          <div class="tier-cond">신규 가입 회원 기본 등급</div>
+          <ul class="tier-perks">
+            <li>회원가입 즉시 3,000P 웰컴 지급</li>
+            <li>결제 금액의 2% 포인트 적립</li>
+            <li>3만원 이상 구매 시 무료배송</li>
+          </ul>
+        </div>
+        <div class="tier-card" data-tier="SILVER">
+          <span class="tier-card-badge" style="background:#7E8790;">SILVER</span>
+          <div class="tier-rate">4% 적립</div>
+          <div class="tier-cond">누적 구매 50,000원 이상</div>
+          <ul class="tier-perks">
+            <li>결제 금액의 4% 포인트 적립</li>
+            <li>매월 시즈닝 샘플 파우치 증정</li>
+            <li>25,000원 이상 무료배송</li>
+          </ul>
+        </div>
+        <div class="tier-card" data-tier="GOLD">
+          <span class="tier-card-badge" style="background:#C89B3C;">GOLD</span>
+          <div class="tier-rate">7% 적립</div>
+          <div class="tier-cond">누적 구매 150,000원 이상</div>
+          <ul class="tier-perks">
+            <li>결제 금액의 7% 포인트 적립</li>
+            <li>아티장 파스타 면 1팩 생일 쿠폰</li>
+            <li>전 상품 상시 무료배송</li>
+          </ul>
+        </div>
+        <div class="tier-card" data-tier="VIP">
+          <span class="tier-card-badge" style="background:#1E1B18;">VIP CHEF</span>
+          <div class="tier-rate">10% 적립</div>
+          <div class="tier-cond">누적 구매 300,000원 이상</div>
+          <ul class="tier-perks">
+            <li>결제 금액의 10% 최고 적립</li>
+            <li>햇올리브 오일 리미티드 우선 예약</li>
+            <li>전 상품 무료배송 + 전용 셰프 레시피북</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="member-dashboard-bar">
+        <div>
+          <h4 id="memberDashTitle" style="font-size:1.1rem; margin-bottom:4px;">현재 비회원(게스트) 상태입니다.</h4>
+          <p id="memberDashSub" style="font-size:0.88rem; color:var(--text-secondary);">지금 10초 만에 회원가입하고 3,000P를 받아 첫 주문에 바로 사용해 보세요!</p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn-primary" onclick="openAuthModal()">회원가입 / 내 등급 관리</button>
+          <button id="logoutBtn" class="cat-btn" style="display:none;" onclick="logoutUser()">로그아웃</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">TERRA PASTA.</div>
+        <p>이탈리아 산지 직송 아티장 파스타 면, 엑스트라 버진 올리브 오일, 칼라브리아 페퍼론치노 및 파스타 전용 조미료를 큐레이션하는 프리미엄 식재료 부티크입니다.</p>
+      </div>
+      <div>
+        <div class="footer-title">카테고리</div>
+        <ul class="footer-list">
+          <li><a href="#catalog">브론즈 다이스 면</a></li>
+          <li><a href="#catalog">엑스트라 버진 올리브 오일</a></li>
+          <li><a href="#catalog">산마르자노 토마토 소스</a></li>
+          <li><a href="#catalog">페퍼론치노 & 천연 조미료</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">멤버십 안내</div>
+        <ul class="footer-list">
+          <li><a href="#membership">등급별 적립률 안내</a></li>
+          <li><a href="#membership">포인트 사용 규정</a></li>
+          <li><a href="#curation">파스타 메뉴별 추천 가이드</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">고객센터</div>
+        <ul class="footer-list">
+          <li>운영시간: 평일 10:00 - 18:00</li>
+          <li>이메일: hello@terrapasta.kr</li>
+          <li>배송안내: 오후 2시 이전 주문 당일 출고</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 TERRA PASTA Artisanal Grocery Co. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Cart Slide-Over Drawer -->
+  <div id="cartBackdrop" class="drawer-backdrop" onclick="toggleCart(false)"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="drawer-header">
+      <h3 style="font-size:1.15rem;">장바구니 & 주문결제</h3>
+      <button onclick="toggleCart(false)" style="font-size:1.4rem; color:var(--text-secondary);">&times;</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div class="point-use-box">
+        <div style="display:flex; justify-content:space-between;">
+          <span>보유 포인트</span>
+          <strong id="drawerAvailPoints" style="color:var(--terracotta);">0 P</strong>
+        </div>
+        <div class="point-input-row">
+          <input type="number" id="usePointInput" min="0" step="100" placeholder="사용할 포인트 입력" oninput="updateCartTotals()" />
+          <button class="cat-btn" onclick="applyAllPoints()">전액 사용</button>
+        </div>
+      </div>
+
+      <div class="summary-row">
+        <span>상품 합계</span>
+        <span id="subtotalText">0원</span>
+      </div>
+      <div class="summary-row">
+        <span>배송비 (3만원 이상 무료)</span>
+        <span id="shippingText">0원</span>
+      </div>
+      <div class="summary-row" style="color:var(--terracotta);">
+        <span>포인트 할인</span>
+        <span id="pointDiscountText">-0원</span>
+      </div>
+      <div class="summary-row" style="color:var(--accent-olive); font-weight:600;">
+        <span>예상 적립 포인트 (<span id="rewardRateText">0%</span>)</span>
+        <span id="expectedPointsText">+0 P</span>
+      </div>
+      <div class="summary-total">
+        <span>최종 결제 금액</span>
+        <span id="finalTotalText">0원</span>
+      </div>
+
+      <button class="btn-primary" style="width:100%; margin-top:14px;" onclick="openCheckoutModal()">결제하기</button>
+    </div>
+  </aside>
+
+  <!-- Auth / Membership Modal -->
+  <div id="authModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="authModalTitle">TERRA PASTA 멤버십</h3>
+        <button onclick="closeModal('authModal')" style="font-size:1.4rem;">&times;</button>
+      </div>
+
+      <div id="authFormSection">
+        <div style="display:flex; gap:8px; margin-bottom:18px;">
+          <button id="tabSignupBtn" class="cat-btn active" style="flex:1;" onclick="switchAuthTab('signup')">회원가입 (3,000P 증정)</button>
+          <button id="tabLoginBtn" class="cat-btn" style="flex:1;" onclick="switchAuthTab('login')">기존 회원 로그인</button>
+        </div>
+
+        <form onsubmit="handleAuthSubmit(event)">
+          <div class="form-group" id="signupNameGroup">
+            <label>이름</label>
+            <input type="text" id="authName" placeholder="예: 이주현" />
+          </div>
+          <div class="form-group">
+            <label>이메일 아이디</label>
+            <input type="email" id="authEmail" required placeholder="pasta@example.com" />
+          </div>
+          <div class="form-group">
+            <label>비밀번호</label>
+            <input type="password" id="authPassword" required placeholder="4자 이상 입력" />
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; margin-top:8px;" id="authSubmitBtn">가입하고 3,000P 받기</button>
+        </form>
+      </div>
+
+      <div id="memberProfileSection" style="display:none;">
+        <div style="background:var(--bg-warm); padding:18px; border-radius:var(--radius-sm); margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <strong id="profileName" style="font-size:1.1rem;">회원님</strong>
+            <span id="profileTierBadge" class="tier-chip">BRONZE</span>
+          </div>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:6px;">이메일: <span id="profileEmail"></span></p>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:6px;">누적 결제 금액: <strong id="profileSpent">0원</strong></p>
+          <p style="font-size:0.95rem; color:var(--terracotta); font-weight:700;">보유 포인트: <span id="profilePoints">0 P</span></p>
+        </div>
+        <h4 style="font-size:0.92rem; margin-bottom:8px;">최근 주문 내역</h4>
+        <div id="orderHistoryList" style="font-size:0.84rem; color:var(--text-secondary); max-height:160px; overflow-y:auto;">
+          아직 주문 내역이 없습니다.
+        </div>
+        <button class="cat-btn" style="width:100%; margin-top:16px;" onclick="logoutUser(); closeModal('authModal');">로그아웃</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Payment Modal -->
+  <div id="checkoutModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>주문 및 결제 정보 입력</h3>
+        <button onclick="closeModal('checkoutModal')" style="font-size:1.4rem;">&times;</button>
+      </div>
+      <form onsubmit="processPayment(event)">
+        <div class="form-group">
+          <label>수령인 성함</label>
+          <input type="text" id="shipName" required placeholder="받는 분 성함" />
+        </div>
+        <div class="form-group">
+          <label>연락처</label>
+          <input type="tel" id="shipPhone" required placeholder="010-0000-0000" />
+        </div>
+        <div class="form-group">
+          <label>배송지 주소</label>
+          <input type="text" id="shipAddress" required placeholder="도로명 주소 및 상세 주소 입력" />
+        </div>
+        <div class="form-group">
+          <label>결제 수단 선택</label>
+          <div class="pay-methods">
+            <button type="button" class="pay-method-btn active" onclick="selectPayMethod(this, '신용/체크카드')">신용/체크카드</button>
+            <button type="button" class="pay-method-btn" onclick="selectPayMethod(this, '테라페이 간편결제')">간편결제</button>
+            <button type="button" class="pay-method-btn" onclick="selectPayMethod(this, '무통장입금')">무통장입금</button>
+          </div>
+        </div>
+
+        <div style="background:var(--terracotta-soft); padding:14px; border-radius:var(--radius-sm); margin:16px 0; font-size:0.88rem;">
+          <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+            <span>최종 결제 금액</span>
+            <strong id="modalPayAmount" style="color:var(--terracotta); font-size:1.05rem;">0원</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; color:var(--accent-olive);">
+            <span>결제 완료 시 적립 예정</span>
+            <strong id="modalEarnPoints">+0 P</strong>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%;">결제 승인하기</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script>
+    // Embedded Inline SVG Data URIs (Zero external image folder required!)
+    const IMG_ASSETS = {{
+      pasta: "{prod_pasta_svg}",
+      oil: "{prod_oil_svg}",
+      sauce: "{prod_sauce_svg}",
+      spice: "{prod_spice_svg}"
+    }};
+
+    const PRODUCTS = [
+      {{
+        id: 'p1',
+        category: '면',
+        name: '그라냐노 브론즈 다이스 스파게티 500g',
+        desc: '거친 표면 가공으로 오일과 토마토 소스가 겉돌지 않고 완벽하게 밀착되는 정통 스파게티 면.',
+        price: 6800,
+        img: IMG_ASSETS.pasta,
+        badge: 'BEST',
+        tags: ['알리오 올리오', '봉골레', '토마토 파스타']
+      }},
+      {{
+        id: 'p2',
+        category: '면',
+        name: '아티장 듀럼밀 탈리아텔레 네스트 500g',
+        desc: '넓고 납작한 면발로 진한 라구 소스나 크림, 트러플 버터 소스와 환상적인 조화를 이룹니다.',
+        price: 7900,
+        img: IMG_ASSETS.pasta,
+        badge: 'CHEF PICK',
+        tags: ['라구 볼로네제', '크림 파스타']
+      }},
+      {{
+        id: 'p3',
+        category: '면',
+        name: '리가토니 튜브 파스타 500g',
+        desc: '굵은 원통형 표면에 홈이 파여 있어 꾸덕한 치즈와 매콤한 아마트리치아나 소스를 가득 품습니다.',
+        price: 7200,
+        img: IMG_ASSETS.pasta,
+        badge: '',
+        tags: ['아마트리치아나', '까르보나라']
+      }},
+      {{
+        id: 'p4',
+        category: '오일',
+        name: '시칠리아 첫 수확 엑스트라 버진 올리브 오일 500ml',
+        desc: '산도 0.18%의 냉압착 유기농 올리브 오일. 풋풋한 허브 향과 깔끔한 피니시가 일품입니다.',
+        price: 24500,
+        img: IMG_ASSETS.oil,
+        badge: 'PREMIUM',
+        tags: ['알리오 올리오', '바질 페스토', '봉골레']
+      }},
+      {{
+        id: 'p5',
+        category: '오일',
+        name: '화이트 트러플 인퓨전 엑스트라 버진 오일 250ml',
+        desc: '완성된 크림 파스타나 버섯 리조또 위에 몇 방울 떨어뜨리면 깊은 풍미가 살아납니다.',
+        price: 21000,
+        img: IMG_ASSETS.oil,
+        badge: '',
+        tags: ['크림 파스타', '까르보나라']
+      }},
+      {{
+        id: 'p6',
+        category: '소스',
+        name: '산마르자노 DOP 홀 토마토 파스타 소스 680g',
+        desc: '화산 토양에서 자란 산마르자노 토마토와 생바질만으로 끓여낸 깊고 산뜻한 정통 소스.',
+        price: 11800,
+        img: IMG_ASSETS.sauce,
+        badge: 'BEST',
+        tags: ['토마토 파스타', '아마트리치아나']
+      }},
+      {{
+        id: 'p7',
+        category: '소스',
+        name: '제노베제 생바질 & 잣 페스토 소스 190g',
+        desc: '리구리아산 어린 바질 잎과 엑스트라 버진 올리브 오일, 파르미지아노 치즈를 블렌딩했습니다.',
+        price: 12500,
+        img: IMG_ASSETS.sauce,
+        badge: 'NEW',
+        tags: ['바질 페스토']
+      }},
+      {{
+        id: 'p8',
+        category: '조미료',
+        name: '칼라브리아 홀 건 페퍼론치노 45g',
+        desc: '이탈리아 남부 칼라브리아산 건고추. 오일 파스타에 알싸하고 깔끔한 감칠맛을 더해줍니다.',
+        price: 6500,
+        img: IMG_ASSETS.oil,
+        badge: '필수템',
+        tags: ['알리오 올리오', '봉골레', '아마트리치아나']
+      }},
+      {{
+        id: 'p9',
+        category: '조미료',
+        name: '시칠리아 천연 암염 플레이크 & 통후추 그라인더 세트',
+        desc: '면수 간을 맞추는 미네랄 암염과 까르보나라의 핵심인 텔리체리 통흑후추 듀오.',
+        price: 13900,
+        img: IMG_ASSETS.spice,
+        badge: '',
+        tags: ['까르보나라', '알리오 올리오', '라구 볼로네제']
+      }},
+      {{
+        id: 'p10',
+        category: '조미료',
+        name: '이탈리안 허브 오레가노 & 로스트 갈릭 시즈닝 60g',
+        desc: '토마토 소스와 오일 파스타의 마늘 풍미를 손쉽게 끌어올리는 셰프 블렌드 조미료.',
+        price: 7400,
+        img: IMG_ASSETS.spice,
+        badge: '',
+        tags: ['토마토 파스타', '알리오 올리오']
+      }}
+    ];
+
+    const PASTA_CURATIONS = [
+      {{
+        id: 'aglio',
+        label: '알리오 올리오',
+        title: '클래식 알리오 올리오 에 페퍼론치노 세트',
+        desc: '재료가 단순할수록 원재료의 퀄리티가 맛을 결정합니다. 거친 브론즈 스파게티 면에 산도 0.18% 올리브 오일과 칼라브리아 페퍼론치노로 유화(에멀전)의 정석을 경험하세요.',
+        tip: '셰프 팁: 면수에 시칠리아 암염을 넉넉히 넣고, 페퍼론치노는 씨째 부수어 약불에서 천천히 향을 우려내세요.',
+        productIds: ['p1', 'p4', 'p8', 'p9']
+      }},
+      {{
+        id: 'tomato',
+        label: '아마트리치아나 · 토마토',
+        title: '진한 감칠맛의 산마르자노 토마토 & 리가토니 세트',
+        desc: '산미와 단맛의 밸런스가 뛰어난 산마르자노 DOP 소스에 굵은 리가토니 면, 매콤한 페퍼론치노를 더해 묵직하고 깊은 풍미의 레드 파스타를 완성합니다.',
+        tip: '셰프 팁: 소스 마무리 단계에서 엑스트라 버진 올리브 오일을 한 바퀴 두르면 윤기와 풍미가 배가됩니다.',
+        productIds: ['p3', 'p6', 'p8', 'p10']
+      }},
+      {{
+        id: 'basil',
+        label: '바질 페스토',
+        title: '향긋한 제노베제 생바질 & 올리브 오일 세트',
+        desc: '불을 거의 쓰지 않고 신선한 향을 살리는 바질 페스토 파스타. 제노베제 페스토 소스에 프리미엄 올리브 오일과 스파게티 면을 가볍게 버무려 즐기세요.',
+        tip: '셰프 팁: 바질 페스토는 열에 약하므로 불을 끈 상태에서 따뜻한 면과 면수 2큰술을 넣어 섞어주세요.',
+        productIds: ['p1', 'p7', 'p4', 'p9']
+      }},
+      {{
+        id: 'cream',
+        label: '트러플 크림 · 까르보나라',
+        title: '꾸덕하고 풍미 가득한 탈리아텔레 & 트러플 세트',
+        desc: '넓은 탈리아텔레 면발에 진한 크림 또는 계란 노른자 소스를 입히고, 갓 갈아낸 통흑후추와 화이트 트러플 오일로 고급스러운 다이닝 메뉴를 연출합니다.',
+        tip: '셰프 팁: 접시에 담아낸 직후 텔리체리 통흑후추를 굵게 갈아 올리면 알싸한 향이 크림의 느끼함을 잡아줍니다.',
+        productIds: ['p2', 'p5', 'p9']
+      }}
+    ];
+
+    const TIER_RULES = {{
+      BRONZE: {{ rate: 0.02, minSpent: 0, label: 'BRONZE (2% 적립)', className: 'bronze' }},
+      SILVER: {{ rate: 0.04, minSpent: 50000, label: 'SILVER (4% 적립)', className: 'silver' }},
+      GOLD:   {{ rate: 0.07, minSpent: 150000, label: 'GOLD (7% 적립)', className: 'gold' }},
+      VIP:    {{ rate: 0.10, minSpent: 300000, label: 'VIP CHEF (10% 적립)', className: 'vip' }}
+    }};
+
+    let currentUser = JSON.parse(localStorage.getItem('terra_user')) || null;
+    let cart = JSON.parse(localStorage.getItem('terra_cart')) || [];
+    let selectedCategory = 'all';
+    let selectedCurationId = 'aglio';
+    let selectedPayMethod = '신용/체크카드';
+    let currentSlide = 0;
+
+    const formatKRW = (num) => num.toLocaleString('ko-KR') + '원';
+
+    function showToast(msg) {{
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
+    }}
+
+    // Hero Slider Logic
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+
+    function showSlide(index) {{
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+      dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    }}
+
+    function moveSlide(step) {{
+      showSlide(currentSlide + step);
+      resetSlideInterval();
+    }}
+
+    function goToSlide(index) {{
+      showSlide(index);
+      resetSlideInterval();
+    }}
+
+    let slideTimer = setInterval(() => showSlide(currentSlide + 1), 5000);
+    function resetSlideInterval() {{
+      clearInterval(slideTimer);
+      slideTimer = setInterval(() => showSlide(currentSlide + 1), 5000);
+    }}
+
+    function renderCuration() {{
+      const tabsEl = document.getElementById('pastaTabs');
+      tabsEl.innerHTML = PASTA_CURATIONS.map(c => `
+        <button class="pasta-tab ${{c.id === selectedCurationId ? 'active' : ''}}" onclick="selectCuration('${{c.id}}')">
+          ${{c.label}}
+        </button>
+      `).join('');
+
+      const active = PASTA_CURATIONS.find(c => c.id === selectedCurationId);
+      const bundleProducts = active.productIds.map(id => PRODUCTS.find(p => p.id === id));
+      const totalBundlePrice = bundleProducts.reduce((sum, p) => sum + p.price, 0);
+
+      document.getElementById('bundleDisplay').innerHTML = `
+        <div class="bundle-info">
+          <span class="section-tag" style="margin-bottom:6px;">RECOMMENDED PAIRING</span>
+          <h3>${{active.title}}</h3>
+          <p>${{active.desc}}</p>
+          <div class="chef-tip">${{active.tip}}</div>
+          <div class="bundle-summary">
+            <div>
+              <div style="font-size:0.8rem; color:var(--text-muted);">세트 구성 합계 (${{bundleProducts.length}}종)</div>
+              <div class="bundle-price">${{formatKRW(totalBundlePrice)}}</div>
+            </div>
+            <button class="btn-primary" onclick="addBundleToCart('${{active.id}}')">추천 재료 한 번에 담기</button>
+          </div>
+        </div>
+        <div class="bundle-items-grid">
+          ${{bundleProducts.map(p => `
+            <div class="mini-prod-card">
+              <img src="${{p.img}}" alt="${{p.name}}">
+              <div class="mini-role">${{p.category}}</div>
+              <div class="mini-name">${{p.name}}</div>
+              <div class="mini-price">${{formatKRW(p.price)}}</div>
+            </div>
+          `).join('')}}
+        </div>
+      `;
+    }}
+
+    function selectCuration(id) {{
+      selectedCurationId = id;
+      renderCuration();
+    }}
+
+    function addBundleToCart(curationId) {{
+      const active = PASTA_CURATIONS.find(c => c.id === curationId);
+      active.productIds.forEach(pid => addToCart(pid, false));
+      showToast(`'${{active.label}}' 추천 재료 ${{active.productIds.length}}종이 장바구니에 담겼습니다!`);
+      toggleCart(true);
+    }}
+
+    document.getElementById('categoryButtons').addEventListener('click', (e) => {{
+      if (!e.target.classList.contains('cat-btn')) return;
+      document.querySelectorAll('#categoryButtons .cat-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      selectedCategory = e.target.dataset.cat;
+      renderProducts();
+    }});
+
+    function renderProducts() {{
+      const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+      const filtered = PRODUCTS.filter(p => {{
+        const matchCat = selectedCategory === 'all' || p.category === selectedCategory;
+        const matchKey = !keyword ||
+          p.name.toLowerCase().includes(keyword) ||
+          p.desc.toLowerCase().includes(keyword) ||
+          p.tags.some(t => t.toLowerCase().includes(keyword));
+        return matchCat && matchKey;
+      }});
+
+      const grid = document.getElementById('productGrid');
+      if (filtered.length === 0) {{
+        grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:48px; color:var(--text-muted);">검색 조건에 맞는 식재료가 없습니다.</div>`;
+        return;
+      }}
+
+      grid.innerHTML = filtered.map(p => `
+        <article class="product-card">
+          <div class="prod-img-wrap">
+            <img src="${{p.img}}" alt="${{p.name}}">
+            ${{p.badge ? `<span class="prod-badge ${{p.badge === 'BEST' || p.badge === '필수템' ? 'hot' : ''}}">${{p.badge}}</span>` : ''}}
+          </div>
+          <div class="prod-body">
+            <div class="prod-cat">${{p.category}}</div>
+            <h3 class="prod-title">${{p.name}}</h3>
+            <p class="prod-desc">${{p.desc}}</p>
+            <div class="prod-tags">
+              ${{p.tags.map(t => `<span class="prod-tag">#${{t}}</span>`).join('')}}
+            </div>
+            <div class="prod-footer">
+              <span class="prod-price">${{formatKRW(p.price)}}</span>
+              <button class="btn-add-cart" onclick="addToCart('${{p.id}}', true)">+ 장바구니 담기</button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }}
+
+    function saveCart() {{
+      localStorage.setItem('terra_cart', JSON.stringify(cart));
+      renderCart();
+    }}
+
+    function addToCart(productId, notify = true) {{
+      const existing = cart.find(item => item.id === productId);
+      if (existing) {{
+        existing.qty += 1;
+      }} else {{
+        cart.push({{ id: productId, qty: 1 }});
+      }}
+      saveCart();
+      if (notify) {{
+        const prod = PRODUCTS.find(p => p.id === productId);
+        showToast(`${{prod.name}} 장바구니 추가 완료`);
+      }}
+    }}
+
+    function changeQty(productId, delta) {{
+      const idx = cart.findIndex(item => item.id === productId);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {{
+        cart.splice(idx, 1);
+      }}
+      saveCart();
+    }}
+
+    function toggleCart(open) {{
+      document.getElementById('cartDrawer').classList.toggle('open', open);
+      document.getElementById('cartBackdrop').classList.toggle('open', open);
+      if (open) renderCart();
+    }}
+
+    function calculateTotals() {{
+      const subtotal = cart.reduce((sum, item) => {{
+        const p = PRODUCTS.find(prod => prod.id === item.id);
+        return sum + (p ? p.price * item.qty : 0);
+      }}, 0);
+
+      const freeShipThreshold = (currentUser && (currentUser.tier === 'GOLD' || currentUser.tier === 'VIP')) ? 0 :
+                                (currentUser && currentUser.tier === 'SILVER') ? 25000 : 30000;
+      const shipping = subtotal === 0 ? 0 : (subtotal >= freeShipThreshold ? 0 : 3000);
+
+      const availPoints = currentUser ? currentUser.points : 0;
+      const inputEl = document.getElementById('usePointInput');
+      let usedPoints = parseInt(inputEl.value, 10) || 0;
+      if (usedPoints < 0) usedPoints = 0;
+      if (usedPoints > availPoints) usedPoints = availPoints;
+      if (usedPoints > subtotal) usedPoints = subtotal;
+      inputEl.value = usedPoints > 0 ? usedPoints : '';
+
+      const finalTotal = Math.max(0, subtotal + shipping - usedPoints);
+      const rewardRate = currentUser ? TIER_RULES[currentUser.tier].rate : 0;
+      const earnedPoints = Math.floor((subtotal - usedPoints) * rewardRate);
+
+      return {{ subtotal, shipping, usedPoints, finalTotal, rewardRate, earnedPoints }};
+    }}
+
+    function applyAllPoints() {{
+      if (!currentUser) {{
+        showToast('로그인 후 포인트를 사용할 수 있습니다.');
+        return;
+      }}
+      const {{ subtotal }} = calculateTotals();
+      const maxUse = Math.min(currentUser.points, subtotal);
+      document.getElementById('usePointInput').value = maxUse;
+      updateCartTotals();
+    }}
+
+    function updateCartTotals() {{
+      const {{ subtotal, shipping, usedPoints, finalTotal, rewardRate, earnedPoints }} = calculateTotals();
+      document.getElementById('drawerAvailPoints').textContent = (currentUser ? currentUser.points : 0).toLocaleString() + ' P';
+      document.getElementById('subtotalText').textContent = formatKRW(subtotal);
+      document.getElementById('shippingText').textContent = shipping === 0 ? '무료' : formatKRW(shipping);
+      document.getElementById('pointDiscountText').textContent = '-' + formatKRW(usedPoints);
+      document.getElementById('rewardRateText').textContent = Math.round(rewardRate * 100) + '%';
+      document.getElementById('expectedPointsText').textContent = '+' + earnedPoints.toLocaleString() + ' P';
+      document.getElementById('finalTotalText').textContent = formatKRW(finalTotal);
+    }}
+
+    function renderCart() {{
+      const totalCount = cart.reduce((sum, i) => sum + i.qty, 0);
+      document.getElementById('cartBadgeCount').textContent = totalCount;
+
+      const container = document.getElementById('cartItemsContainer');
+      if (cart.length === 0) {{
+        container.innerHTML = `<div style="text-align:center; padding:60px 10px; color:var(--text-muted);">장바구니가 비어 있습니다.<br>파스타 재료를 담아보세요!</div>`;
+      }} else {{
+        container.innerHTML = cart.map(item => {{
+          const p = PRODUCTS.find(prod => prod.id === item.id);
+          return `
+            <div class="cart-item">
+              <img src="${{p.img}}" alt="${{p.name}}">
+              <div class="cart-item-info">
+                <div style="font-size:0.9rem; font-weight:700;">${{p.name}}</div>
+                <div style="font-size:0.84rem; color:var(--terracotta); font-weight:600;">${{formatKRW(p.price * item.qty)}}</div>
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty('${{p.id}}', -1)">-</button>
+                  <span style="font-size:0.85rem; font-weight:600;">${{item.qty}}</span>
+                  <button class="qty-btn" onclick="changeQty('${{p.id}}', 1)">+</button>
+                </div>
+              </div>
+              <button onclick="changeQty('${{p.id}}', -${{item.qty}})" style="color:var(--text-muted); font-size:1.1rem;">&times;</button>
+            </div>
+          `;
+        }}).join('');
+      }}
+      updateCartTotals();
+    }}
+
+    let authMode = 'signup';
+
+    function computeTier(totalSpent) {{
+      if (totalSpent >= 300000) return 'VIP';
+      if (totalSpent >= 150000) return 'GOLD';
+      if (totalSpent >= 50000) return 'SILVER';
+      return 'BRONZE';
+    }}
+
+    function syncUserUI() {{
+      const nameEl = document.getElementById('headerUserName');
+      const tierEl = document.getElementById('headerUserTier');
+      const ptEl = document.getElementById('headerUserPoints');
+      const dashTitle = document.getElementById('memberDashTitle');
+      const dashSub = document.getElementById('memberDashSub');
+      const logoutBtn = document.getElementById('logoutBtn');
+
+      document.querySelectorAll('.tier-card').forEach(card => card.classList.remove('current-tier'));
+
+      if (currentUser) {{
+        currentUser.tier = computeTier(currentUser.totalSpent);
+        localStorage.setItem('terra_user', JSON.stringify(currentUser));
+
+        nameEl.textContent = currentUser.name + '님';
+        tierEl.textContent = currentUser.tier;
+        tierEl.className = 'tier-chip ' + TIER_RULES[currentUser.tier].className;
+        ptEl.textContent = currentUser.points.toLocaleString() + 'P';
+
+        dashTitle.textContent = `${{currentUser.name}}님은 현재 [${{currentUser.tier}}] 등급입니다. (보유 포인트: ${{currentUser.points.toLocaleString()}}P)`;
+        dashSub.textContent = `누적 구매 금액 ${{formatKRW(currentUser.totalSpent)}} · 결제 시 ${{Math.round(TIER_RULES[currentUser.tier].rate * 100)}}% 포인트 자동 적립 적용 중`;
+        logoutBtn.style.display = 'inline-block';
+
+        const activeCard = document.querySelector(`.tier-card[data-tier="${{currentUser.tier}}"]`);
+        if (activeCard) activeCard.classList.add('current-tier');
+      }} else {{
+        nameEl.textContent = '로그인 / 회원가입';
+        tierEl.textContent = 'GUEST';
+        tierEl.className = 'tier-chip bronze';
+        ptEl.textContent = '0P';
+
+        dashTitle.textContent = '현재 비회원(게스트) 상태입니다.';
+        dashSub.textContent = '지금 10초 만에 회원가입하고 3,000P를 받아 첫 주문에 바로 사용해 보세요!';
+        logoutBtn.style.display = 'none';
+      }}
+      renderCart();
+    }}
+
+    function openAuthModal() {{
+      const modal = document.getElementById('authModal');
+      if (currentUser) {{
+        document.getElementById('authFormSection').style.display = 'none';
+        document.getElementById('memberProfileSection').style.display = 'block';
+        document.getElementById('profileName').textContent = currentUser.name + ' 회원님';
+        document.getElementById('profileEmail').textContent = currentUser.email;
+        document.getElementById('profileSpent').textContent = formatKRW(currentUser.totalSpent);
+        document.getElementById('profilePoints').textContent = currentUser.points.toLocaleString() + ' P';
+
+        const badge = document.getElementById('profileTierBadge');
+        badge.textContent = currentUser.tier;
+        badge.className = 'tier-chip ' + TIER_RULES[currentUser.tier].className;
+
+        const historyEl = document.getElementById('orderHistoryList');
+        if (!currentUser.orders || currentUser.orders.length === 0) {{
+          historyEl.innerHTML = '아직 주문 내역이 없습니다.';
+        }} else {{
+          historyEl.innerHTML = currentUser.orders.map(o => `
+            <div style="padding:8px 0; border-bottom:1px solid var(--border-light);">
+              <strong>${{o.date}}</strong> · ${{o.summary}}<br>
+              결제: ${{formatKRW(o.paid)}} (적립 +${{o.earned}}P)
+            </div>
+          `).join('');
+        }}
+      }} else {{
+        document.getElementById('authFormSection').style.display = 'block';
+        document.getElementById('memberProfileSection').style.display = 'none';
+      }}
+      modal.classList.add('open');
+    }}
+
+    function closeModal(id) {{
+      document.getElementById(id).classList.remove('open');
+    }}
+
+    function switchAuthTab(mode) {{
+      authMode = mode;
+      document.getElementById('tabSignupBtn').classList.toggle('active', mode === 'signup');
+      document.getElementById('tabLoginBtn').classList.toggle('active', mode === 'login');
+      document.getElementById('signupNameGroup').style.display = mode === 'signup' ? 'block' : 'none';
+      document.getElementById('authSubmitBtn').textContent = mode === 'signup' ? '가입하고 3,000P 받기' : '로그인하기';
+    }}
+
+    function handleAuthSubmit(e) {{
+      e.preventDefault();
+      const email = document.getElementById('authEmail').value.trim();
+      const nameInput = document.getElementById('authName').value.trim();
+
+      const savedAccounts = JSON.parse(localStorage.getItem('terra_accounts')) || {{}};
+
+      if (authMode === 'signup') {{
+        const displayName = nameInput || email.split('@')[0];
+        const newUser = {{
+          name: displayName,
+          email,
+          tier: 'BRONZE',
+          points: 3000,
+          totalSpent: 0,
+          orders: []
+        }};
+        savedAccounts[email] = newUser;
+        localStorage.setItem('terra_accounts', JSON.stringify(savedAccounts));
+        currentUser = newUser;
+        showToast(`환영합니다, ${{displayName}}님! 웰컴 3,000P가 지급되었습니다.`);
+      }} else {{
+        if (savedAccounts[email]) {{
+          currentUser = savedAccounts[email];
+          showToast(`${{currentUser.name}}님, 다시 오신 것을 환영합니다!`);
+        }} else {{
+          const demoName = email.split('@')[0];
+          currentUser = {{
+            name: demoName,
+            email,
+            tier: 'BRONZE',
+            points: 3000,
+            totalSpent: 0,
+            orders: []
+          }};
+          savedAccounts[email] = currentUser;
+          localStorage.setItem('terra_accounts', JSON.stringify(savedAccounts));
+          showToast(`${{demoName}}님 계정이 활성화되었습니다! (3,000P 지급)`);
+        }}
+      }}
+
+      syncUserUI();
+      closeModal('authModal');
+    }}
+
+    function logoutUser() {{
+      currentUser = null;
+      localStorage.removeItem('terra_user');
+      syncUserUI();
+      showToast('로그아웃 되었습니다.');
+    }}
+
+    function openCheckoutModal() {{
+      if (cart.length === 0) {{
+        showToast('장바구니에 상품을 먼저 담아주세요.');
+        return;
+      }}
+      const {{ finalTotal, earnedPoints }} = calculateTotals();
+      document.getElementById('modalPayAmount').textContent = formatKRW(finalTotal);
+      document.getElementById('modalEarnPoints').textContent = currentUser ? `+${{earnedPoints.toLocaleString()}} P` : '비회원 (가입 시 적립)';
+      if (currentUser) {{
+        document.getElementById('shipName').value = currentUser.name;
+      }}
+      toggleCart(false);
+      document.getElementById('checkoutModal').classList.add('open');
+    }}
+
+    function selectPayMethod(btn, method) {{
+      document.querySelectorAll('.pay-method-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedPayMethod = method;
+    }}
+
+    function processPayment(e) {{
+      e.preventDefault();
+      const {{ subtotal, usedPoints, finalTotal, earnedPoints }} = calculateTotals();
+      const firstProd = PRODUCTS.find(p => p.id === cart[0].id);
+      const summary = cart.length > 1 ? `${{firstProd.name}} 외 ${{cart.length - 1}}건` : firstProd.name;
+
+      let upgradeMsg = '';
+      if (currentUser) {{
+        const prevTier = currentUser.tier;
+        currentUser.points = currentUser.points - usedPoints + earnedPoints;
+        currentUser.totalSpent += finalTotal;
+        const newTier = computeTier(currentUser.totalSpent);
+        currentUser.tier = newTier;
+        currentUser.orders.unshift({{
+          date: new Date().toLocaleDateString('ko-KR'),
+          summary,
+          paid: finalTotal,
+          earned: earnedPoints
+        }});
+
+        const savedAccounts = JSON.parse(localStorage.getItem('terra_accounts')) || {{}};
+        savedAccounts[currentUser.email] = currentUser;
+        localStorage.setItem('terra_accounts', JSON.stringify(savedAccounts));
+
+        if (prevTier !== newTier) {{
+          upgradeMsg = ` 🎉 축하합니다! [${{newTier}}] 등급으로 승급되었습니다!`;
+        }}
+      }}
+
+      cart = [];
+      document.getElementById('usePointInput').value = '';
+      saveCart();
+      syncUserUI();
+      closeModal('checkoutModal');
+
+      showToast(`[${{selectedPayMethod}}] ${{formatKRW(finalTotal)}} 결제 완료!${{upgradeMsg}}`);
+    }}
+
+    renderCuration();
+    renderProducts();
+    syncUserUI();
+  </script>
+</body>
+</html>
+'''
+
+with open("index-v2.html", "w", encoding="utf-8") as f:
+    f.write(html_single_file)
+
+print("Generated standalone index-v2.html size:", len(html_single_file))
